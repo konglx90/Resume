@@ -1,0 +1,36 @@
+/* reset */
+
+body {
+  font-family: Roboto,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .03125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h4, h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  /* position: relative;
+  left: -15px; */
+}
