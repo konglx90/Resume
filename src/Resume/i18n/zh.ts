@@ -69,6 +69,7 @@ React学习经历、独立完成快站系统插件开发优化、React Native �
 - B端通用组件库kzui
 - monorepo 组织项目
 - 快站插件开发优化
+- git 提交规范
 `
     }, {
       title: 'xqui(svelte)',
