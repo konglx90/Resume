@@ -1,3 +1,5 @@
+import { judge } from "./utils";
+
 const twoPointer = (a: number[], target: number): [number, number] => {
   if (a.length < 2) {
     return [NaN, NaN]
@@ -23,12 +25,10 @@ const twoPointer = (a: number[], target: number): [number, number] => {
 }
 
 const a = [1, 2, 4, 6, 9, 10]
-const target = 12
 
-console.log(twoPointer(a, target))
-
-console.log(twoPointer(a, 10))
-console.log(twoPointer(a, 11))
+judge(function(output: number[]) {
+  return output[0] === 1 && output[1] === 9
+}, twoPointer, a, 10)
 
 export {
   twoPointer
