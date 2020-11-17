@@ -3,6 +3,8 @@ import Resume from './Resume/index';
 import i18n from './Resume/i18n';
 import { getValueFromLocationSearch } from './tools'
 
+import './Code/two-pointer'
+
 const App: React.FC = () => {
 
   const [lang, setLang] = useState<string>('zh');
