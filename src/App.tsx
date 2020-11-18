@@ -3,8 +3,11 @@ import Resume from './Resume/index';
 import i18n from './Resume/i18n';
 import { getValueFromLocationSearch } from './tools'
 
-import './Code/two-pointer'
+// import './Code/two-pointer'
 // import './Code/reverse-string'
+// import './Code/remove-element'
+// import './Code/binary-search'
+import './Code/search-insert'
 
 const App: React.FC = () => {
 
