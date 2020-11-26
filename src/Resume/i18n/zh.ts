@@ -26,7 +26,7 @@ export const resumeData: ResumeProps = {
 - 有较多的前端项目的维护经验，技术栈涉及React、Vue、Backbone、jQuery等
 - 认真学习过计算机基础知识，包括数据结构、算法和网络知识
 - 日常工作的技术栈为React、TypeScript
-- 有过Tarojs、svelte等的使用经验
+- 有过tarojs、svelte等的使用经验
     `
   }, {
     type: SectionType.timeline,
@@ -35,60 +35,52 @@ export const resumeData: ResumeProps = {
       title: '前端工程师',
       company: '北京云站(原搜狐快站)',
       startDate: '2018-09',
-      endDate: '2020-06',
+      endDate: '至今',
       description: 
 `
-负责公司web前端的开发和维护工作和前端团队的管理工作.
+<b>项目介绍</b>: 快站，可视化、零门槛快速建站
 
-完善并开源公司自研组件库\`kzui\`(基于\`React\`).
+<b>公司网站</b>: https://www.kuaizhan.com
 
-在两年时间内渐进完成前端技术栈的收敛和更新，主要是向React和TypeScript靠拢，模块使用monorepo来管理.
+<b>kzui</b>: https://kuaizhan.github.io/kzui
 
-历史技术栈上的需求，使用svelte生成web component来做跨技术栈的支持.
+<b>技术栈</b>: react、taro、remax、kzui、xqui、typescript等
+
+职责: 负责整个前端开发以及前端团队的搭建和管理工作
+
+1、完善并开源公司自研组件库\`kzui\`(基于\`React\`).
+
+2、在两年时间内渐进完成前端技术栈的收敛和更新，主要是向React和TypeScript靠拢，模块使用monorepo来管理，制定代码规范和监督执行
+
+3、历史技术栈上的需求，使用svelte生成web component来做跨技术栈的支持.
+
+4、拖拽建小程序系统
+
+5、快客多(小程序电商平台)系统
+
+6、快站插件系统开发优化
 `
     }, {
       title: '前端工程师',
-      company: '搜狐',
+      company: '搜狐快站',
       startDate: '2017-07',
       endDate: '2018-09',
       description: 
 `
-React学习经历、独立完成快站系统插件开发优化、React Native 开发经历.
+<b>项目介绍</b>: 快站B端，主要是快站插件系统、云商店和投票业务。涉及B端管理页面和移动端页面。
+
+<b>技术栈</b>: react、vue、eslint、webpack、gulp、react-native
+
+<b>职责</b>: 负责部分功能的开发和业务维护
+
+1、主要技术栈是React，基于React重构云商店的后台系统
+
+2、eslint 规范的制定 eslint-config-kuaizhan，基于 airbnb 做了些自定义
+
+3、基于vue开发投票C端页面及B端后台
+
+4、基于react-native开发南瓜租房iOS端
 `
-    }]
-  }, {
-    type: SectionType.timeline,
-    title: '项目',
-    stories: [{
-      title: '快站管理后台',
-      startDate: '2019-07',
-      endDate: '至今',
-      description: 
-`
-- 快速开发能力
-- B端通用组件库kzui
-- monorepo 组织项目
-- 快站插件开发优化
-- git 提交规范
-`
-    }, {
-      title: 'xqui(svelte)',
-      startDate: '2020-01',
-      endDate: '至今',
-      description: 
-`
-- 设计规范的制定
-- 开源能力的锻炼
-- 通用性
-`
-    }, {
-      title: '快站小程序',
-      startDate: '2017-07',
-      endDate: '至今',
-      description: 
-`
-- 目标是拖拽可以生成全平台应用
-` 
     }]
   }]
 }
