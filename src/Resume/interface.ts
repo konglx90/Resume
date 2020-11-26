@@ -41,10 +41,11 @@ export interface TimeLineSectionProps {
 
 export interface ResumeProps {
   personalDetail: {
-    jobTitle: string,
-    name: string,
-    email: string,
-    phone: string,
+    jobTitle: string
+    name: string
+    email: string
+    phone: string
+    study?: string
   },
   sections: Array<
     TimeLineSectionProps | 

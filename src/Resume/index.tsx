@@ -55,9 +55,8 @@ const Section: React.FC = props => (
   <section
     style={{
       borderTop: '2px solid #333',
-      marginTop: '10px',
-      paddingTop: '10px',
-      paddingBottom: '20px',
+      paddingTop: '5px',
+      paddingBottom: '5px',
       fontSize: styleConfig.fontSize.default,
       lineHeight: '24px'
     }}
@@ -95,7 +94,11 @@ const TimeLineSection: React.FC<TimeLineSectionProps> = props => (
         </Col>
         <Col span={20}>
           <div style={spaceBetweenStyle}>
-            <h4>{story.title}</h4>
+            <ReactMarkdown
+              escapeHtml={false}
+            >
+              {`<b>${story.title}</b>`}
+            </ReactMarkdown>
             <h5>{story.company}</h5>
           </div>
           <ReactMarkdown escapeHtml={false}>{story.description}</ReactMarkdown>
@@ -108,8 +111,12 @@ const TimeLineSection: React.FC<TimeLineSectionProps> = props => (
 const Resume: React.FC<ResumeProps> = (props) => {
   return (
     <div className="resume">
-      <header>
-        <h3>{props.personalDetail.name} {props.personalDetail.jobTitle}</h3>
+      <header style={{
+          marginBottom: '10px'
+      }}>
+        <h3 style={{
+          marginTop: 0
+        }}>{props.personalDetail.name} {props.personalDetail.jobTitle}</h3>
         <p>
           <a href={`tel:${props.personalDetail.phone}`}>
             {props.personalDetail.phone}
@@ -118,6 +125,9 @@ const Resume: React.FC<ResumeProps> = (props) => {
           <a href={`mailto:${props.personalDetail.email}`}>
             {props.personalDetail.email}
           </a>
+        </p>
+        <p style={{ fontSize: '14px' }}>
+          {props.personalDetail.study}
         </p>
       </header>
       <main>
