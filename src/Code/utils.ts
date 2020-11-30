@@ -1,4 +1,6 @@
+// todo array judge
 const judge = (assert: any, alg: (...args: any[]) => any, ...args: any[]) => {
+  const input = args.join('\n       ')
   const output = alg(...args)
   let result = false
 
@@ -10,7 +12,7 @@ const judge = (assert: any, alg: (...args: any[]) => any, ...args: any[]) => {
 
   console.log(`
 judge>>>>>>>>>>>>
-input: ${args.join('\n       ')}
+input: ${input}
 output: ${output}
 result: ${result ? '✅' : '❌'}
 end=============
